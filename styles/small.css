@@ -10,7 +10,7 @@ header {
     align-items: center;   
     justify-content: center;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     background-color: rgb(3, 3, 51);
     color: white;
 }
@@ -25,7 +25,7 @@ header h2 {
 }
 
 nav {
-    padding: 10px;
+    padding: 1px;
     background-color: black;
     color: white;
 }
@@ -130,6 +130,33 @@ h1 {
     padding: 10px; 
     text-align: center; 
     border-radius: 5px;
+}
+#allCourses {
+        background-color: black; /* Black background */
+        color: white; /* White text */
+        padding: 3px 30px; /* Adds padding */
+        border: none; /* Removes default button border */
+        cursor: pointer; /* Pointer on hover */
+        font-size: 15px; /* Font size */
+        border-radius: 5px; /* Optional rounded corners */
+}
+#wddCourses {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    padding: 3px 30px; /* Adds padding */
+    border: none; /* Removes default button border */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 15px; /* Font size */
+    border-radius: 5px; /* Optional rounded corners */
+}
+#cseCourses {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    padding: 3px 30px; /* Adds padding */
+    border: none; /* Removes default button border */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 15px; /* Font size */
+    border-radius: 5px; /* Optional rounded corners */
 }
 
 footer {
