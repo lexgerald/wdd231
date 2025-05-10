@@ -17,6 +17,10 @@ function displayCourses(filter) {
         const div = document.createElement("div");
         div.textContent = course.name;
         div.style.background = course.completed ? "brown" : "grey"; // Brown if completed
+        div.style.color = "white"; // Ensures text color is white
+        div.style.padding = "10px"; // Adds padding for better readability
+        div.style.margin = "5px 0"; // Adds spacing between items
+        div.style.borderRadius = "5px"; // Rounds corners slightly
         container.appendChild(div);
     });
 }
