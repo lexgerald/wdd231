@@ -11,7 +11,7 @@ header {
     justify-content: center;
     text-align: center;
     padding: 5px;
-    background-color: rgb(3, 3, 51);
+    background-color: #444;
     color: white;
 }
 
@@ -59,14 +59,15 @@ nav button {
 
 main {
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    grid-template-columns: 1fr;
     gap: 1rem;
     margin: 1rem auto;
     padding: 1rem;
 }
 
 h1 {
+    margin: 40px;
     padding-left: 20px;
     margin-bottom: 0;
     color: #444;
@@ -75,23 +76,6 @@ h1 {
     margin-bottom: 20px; /* Adds space below the heading */
 }
 
-.content-container {
-    display: flex;
-    justify-content: space-between; /* Spaces sections evenly */
-    align-items: center; /* Aligns items vertically */
-    gap: 20px; /* Adds spacing between sections */
-    padding: 20px;
-}
-.content-container {
-    display: grid;  
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.912);
-}
 .content-container2 {
     display: flex;  
     justify-content: space-between; 
@@ -106,17 +90,11 @@ h1 {
     margin-bottom: 40px;
 }
 
-.course-work, .toloria {
+.course-work {
     flex: 1; 
     text-align: center; 
 }
 
-.toloria img {
-    width: 100%; 
-    max-width: 200px; 
-    display: block;
-    margin: 0 auto;
-}
 .course-work h2 {
     background-color: #444;
     color: white; 
@@ -124,13 +102,58 @@ h1 {
     text-align: center; 
     border-radius: 5px; 
 }
-.toloria h2 {
-    background-color: #444; 
-    color: white; 
-    padding: 10px; 
-    text-align: center; 
+
+/* Card Sections */
+.card {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+  }
+  .card-body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+  }
+  .card-image {
+    text-align: center;
+  }
+  
+  .card-image img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
     border-radius: 5px;
-}
+  }
+  
+  .card-image p {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+    position: relative;
+  }
 #allCourses {
         background-color: black; /* Black background */
         color: white; /* White text */
@@ -183,3 +206,9 @@ footer img {
 footer p {
     margin: 5px 0;
 }
+
+@media (min-width: 768px) {
+    main {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
