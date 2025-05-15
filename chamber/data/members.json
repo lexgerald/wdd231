@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Gerald Williams",
+        "address": "123 Main Street, Wellington Bassah",
+        "phone": "+232-123-4567",
+        "website": "https://geraldsbakery.com",
+        "image": "../images/mic.jpeg",
+        "membership": 3,
+        "industry": "Manufacturing"
+    },
+    {
+      "name": "XYZ Tech Solutions",
+      "address": "456 Innovation Drive, [City], [State]",
+      "phone": "(555) 987-6543",
+      "website": "https://xyztech.com",
+      "image": "xyz-logo.jpg",
+      "membership": 2,
+      "industry": "Technology"
+    },
+    {
+      "name": "Main Street Diner",
+      "address": "789 Main Street, [City], [State]",
+      "phone": "(555) 555-1212",
+      "website": "https://mainstreetdiner.com",
+      "image": "diner-logo.jpg",
+      "membership": 1,
+      "industry": "Restaurant"
+    },
+    {
+        "name": "XYZ Tech Solutions",
+        "address": "456 Innovation Drive, [City], [State]",
+        "phone": "(555) 987-6543",
+        "website": "https://xyztech.com",
+        "image": "xyz-logo.jpg",
+        "membership": 2,
+        "industry": "Technology"
+      },
+      {
+        "name": "Gerald Williams",
+        "address": "123 Main Street, Wellington Bassah",
+        "phone": "+232-123-4567",
+        "website": "https://geraldsbakery.com",
+        "image": "images/bakery.jpg",
+        "membership": 3,
+        "industry": "Manufacturing"
+    },
+    {
+        "name": "XYZ Tech Solutions",
+        "address": "456 Innovation Drive, [City], [State]",
+        "phone": "(555) 987-6543",
+        "website": "https://xyztech.com",
+        "image": "xyz-logo.jpg",
+        "membership": 2,
+        "industry": "Technology"
+      },
+      {
+        "name": "XYZ Tech Solutions",
+        "address": "456 Innovation Drive, [City], [State]",
+        "phone": "(555) 987-6543",
+        "website": "https://xyztech.com",
+        "image": "xyz-logo.jpg",
+        "membership": 2,
+        "industry": "Technology"
+      },
+      {
+        "name": "XYZ Tech Solutions",
+        "address": "456 Innovation Drive, [City], [State]",
+        "phone": "(555) 987-6543",
+        "website": "https://xyztech.com",
+        "image": "xyz-logo.jpg",
+        "membership": 2,
+        "industry": "Technology"
+      },
+      {
+        "name": "XYZ Tech Solutions",
+        "address": "456 Innovation Drive, [City], [State]",
+        "phone": "(555) 987-6543",
+        "website": "https://xyztech.com",
+        "image": "xyz-logo.jpg",
+        "membership": 2,
+        "industry": "Technology"
+      }
+  ]

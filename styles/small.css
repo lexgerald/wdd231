@@ -43,7 +43,7 @@ nav ul li a {
     font-size: 18px;
 }
 nav ul li a:hover {
-    background-color: #34495e;
+    color: #444;
 }
 
 nav ul.active {

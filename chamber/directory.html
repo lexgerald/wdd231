@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chamber of Commerce directory for Freetown">
+  <meta name="author" content="Gerald Williams">
+  
+  <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="Freetown Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://[yourdomain]/images/social-preview.jpg">
+  <meta property="og:url" content="https://[yourdomain]/chamber/directory.html">
+  
+  <title>Directory | Freetown Chamber of Commerce</title>
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Freetown Chamber of Commerce</h1>
+    <nav>
+      <button id="menu-button">☰</button>
+      <ul id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h2>Business Directory</h2>
+  <section class="weather">
+    <div class="current-weather">
+        <h2>Current Weather</h2>
+        <p><span id="temperature">78</span>°F</p>
+        <p>Partly Cloudy</p>
+        <p>High: 85° Low: 52°</p>
+        <p>Humidity: 34%</p>
+        <p>Sunrise: 7:30am</p>
+        <p>Sunset: 9:50pm</p>
+    </div>
+    <div class="weather-forecast">
+        <h2>Weather Forecast</h2>
+        <p>Today: 90°F</p>
+        <p>Wednesday: 89°F</p>
+        <p>Thursday: 68°F</p>
+    </div>
+   </section>
+  <main>
+    <div class="view-toggle">
+      <button id="grid-view">Grid View</button>
+      <button id="list-view">List View</button>
+    </div>
+    <div id="members-container" class="grid-view"></div>
+  </main>
+
+  <footer>
+    <div class="contact">
+      <p>Freetown Chamber of Commerce</p>
+      <p>123 Main Street</p>
+      <p>Freetown, Wellington</p>
+      <p>☎ (+232) 88412467</p>
+      <p>✉ info@citychamber.org</p>
+    </div>
+    <div class="legal">
+      <p>&copy; <span id="copyright-year"></span> Freetown Chamber</p>
+      <p>Gerald Williams</p>
+      <p>WDD 231 Project</p>
+      <p>Last Modified: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
