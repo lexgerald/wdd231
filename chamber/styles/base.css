@@ -87,25 +87,79 @@
     margin: 0 auto 1rem;
   }
   
-  /* List View */
-  .list-view {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
+/* List View Styles (Mobile First Approach) */
+.list-view .member-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+}
+
+/* Hide images in list view */
+.list-view .member-card img {
+  display: none;
+}
+
+/* Compact information layout */
+.list-view .member-card h3 {
+  color: var(--primary-color);
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.list-view .member-card p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: var(--dark-color);
+}
+
+.list-view .member-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive adjustments for tablets */
+@media (min-width: 480px) {
   .list-view .member-card {
-    display: flex;
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop/larger tablet view */
+@media (min-width: 768px) {
+  .list-view .member-card {
+    grid-template-columns: 2fr 2fr 1.5fr 1fr;
     align-items: center;
     gap: 1rem;
   }
   
-  .list-view .member-card img {
-    max-width: 80px;
+  .list-view .member-card h3,
+  .list-view .member-card p,
+  .list-view .member-card a {
     margin: 0;
   }
+}
 
+/* Hover effects for non-touch devices */
+@media (hover: hover) {
+  .list-view .member-card:hover {
+    background-color: #f8f9fa;
+    transform: translateX(2px);
+    transition: all 0.2s ease;
+  }
+}
+
+/* Optional: Add hover effect for better UX */
+.list-view .member-card:hover {
+  background-color: #e9ecef;
+  transform: translateX(4px);
+  transition: all 0.2s ease;
+}
   /* Weather Section Grid Layout */
 .weather {
     display: grid;
