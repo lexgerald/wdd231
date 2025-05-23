@@ -1,0 +1,209 @@
+/* Base Styles */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #e7c24f;
+    --accent1-color: #a43312;
+    --accent2-color: #381d2a;
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+    --nav-background-color: #381d2a;
+    --nav-link-color: #e7c24f;
+    --nav-hover-link-color: #a43312;
+    --nav-hover-background-color: #003366;
+     --dark-color: #343a40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li {
+    flex: 1;
+    text-align: center;
+}
+
+.navigation a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+.navigation a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: #fff;
+}
+
+.active a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+/* Sections */
+section {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Events */
+.event-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Weather */
+.weather {
+    background-color: #e6f2ff;
+    border-radius: 10px;
+}
+
+.current-weather, .forecast {
+    margin-bottom: 1rem;
+}
+
+/* Spotlights */
+.spotlight-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.spotlight-card img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Mobile Menu */
+#menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        display: none;
+        flex-direction: column;
+    }
+    
+    .navigation.show {
+        display: flex;
+    }
+    
+    #menu-button {
+        display: block;
+    }
+}

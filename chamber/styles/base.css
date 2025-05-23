@@ -1,6 +1,6 @@
 /* Base Styles */
 :root {
-    --primary-color: #0056b3;
+    --primary-color: #003366;
     --secondary-color: #6c757d;
     --accent-color: #ffc107;
     --light-color: #f8f9fa;
@@ -35,14 +35,14 @@
   }
   
   nav li a {
-    color: white;
+    color: green;
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: block;
   }
   
   nav li a:hover {
-    background-color: var(--secondary-color);
+    background-color: #fff;
   }
   
   .view-toggle {
