@@ -37,8 +37,12 @@ header {
     justify-content: space-between;
 }
 
+.header-content img {
+    padding: 10px;
+}
+
 .logo {
-    width: 80px;
+    width: 160px;
     height: auto;
 }
 
