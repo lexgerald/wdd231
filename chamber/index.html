@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber of Commerce directory for Freetown">
+    <meta name="author" content="Gerald Williams">
+ 
+     <!-- Social Media Meta Tags -->
+  <meta property="og:title" content="Freetown Chamber of Commerce">
+  <meta property="og:description" content="The Wellington Bassah Chamber of Commerce is dedicated to fostering economic growth, supporting local businesses, and strengthening the community.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://github.com/lexgerald/wdd231/blob/main/images/williams.jpg">
+  <meta property="og:url" content="https://lexgerald.github.io/wdd231/chamber/directory.html">
+  
+    <title>Freetown Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base2.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/logo.jpg">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.jpg" alt="Chamber Logo" class="logo">
+            <button id="menu-button" aria-label="Navigation Menu">☰</button>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/hero-small.jpg">
+                <source media="(min-width: 601px)" srcset="images/hero-large.jpg">
+                <img src="images/hero-large.jpg" alt="City skyline">
+            </picture>
+            <h1>Directory that show Companies</h1>
+            <div class="hero-content">
+                <h2>Welcome to Our Community</h2>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <!-- Current Events -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <div class="event-card">
+                <h3>Business Networking Mixer</h3>
+                <p>June 15, 2025 | 5:30 PM - 7:30 PM</p>
+                <p>Freetown City Councle</p>
+            </div>
+            <div class="event-card">
+                <h3>Economic Development Forum</h3>
+                <p>June 22, 2025 | 8:00 AM - 12:00 PM</p>
+                <p>Downtown Business Hub</p>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Local Weather</h2>
+            <div class="current-weather">
+                <h3>Current Conditions</h3>
+                <div id="weather-icon"></div>
+                <p>Temperature: <span id="current-temp"></span>°F</p>
+                <p>Condition: <span id="weather-desc"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+            </div>
+            <div class="forecast">
+                <h3>3-Day Forecast</h3>
+                <div id="forecast-container"></div>
+            </div>
+        </section>
+
+        <!-- Member Spotlights -->
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <img src="images/logo.jpg" alt="Chamber Logo" class="footer-logo">
+                <p>123 Main Street<br>Freetown, ST 12345<br>☎ (+232) 88-412467<br>✉ info@yourcitychamber.org</p>
+            </div>
+            <div class="footer-links">
+                <p>&copy; <span id="current-year"></span> Freetown Chamber</p>
+                <p>Gerald Williams</p>
+                <p>WDD 231 Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+</body>
+</html>

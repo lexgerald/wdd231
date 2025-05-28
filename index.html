@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231 Responsive Web Design">
+    <meta name="author" content="Gerald Williams">
+    <title>WDD 231 Web Fronend Developement 1 - Gerald Williams</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/williams.jpg" alt="Profile Photo">
+        <h2>Gerald Williams</h2>
+    </header>
+
+    <nav>
+        <button id="menuBtn">&#9776;</button> 
+        <ul id="navMenu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="final.html">Final</a></li>
+            <li><a href="https://github.com/lexgerald">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/gerald-williams-0825a81a0/">LinkedIn</a></li>
+        </ul>
+    </nav>
+    <h1>Web Fronend Developement 1</h1>
+    <main>
+            <section class="card about">
+                <h2 class="card-header">Course Work</h2>
+                <div class="card-body">
+                  <div class="card-text">
+                    <ul>
+                        <li>HTML & CSS Fundamentals</li>
+                        <li>JavaScript Basics</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                  </div>
+                 
+                </div>
+              </section>
+    
+            <section class="card">
+                <h2 class="card-header">Freetown, Sierra Leone</h2>
+                <div class="card-image">
+                    <img src="images/lumly-beach.jpeg" alt="Lumly Beach">
+                    <p class="flag-caption">Sierra Leone</p>
+                </div>
+            </section>
+       
+    </main>
+  
+        <div class="content-container2">
+            <section class="course-work">
+                <h2>Web and Computer Programming Certificate</h2>
+                <button id="allCourses">All</button>
+                <button id="wddCourses">WDD</button>
+                <button id="cseCourses">CSE</button>
+                <div id="coursesContainer"></div>
+            </section>
+        </div>
+
+    <footer>
+        <div class="footer-top">
+            <p>&copy; <span id="currentyear"></span> 💻Gerald Williams💻 Sierra Leone</p>
+            <img src="images/sl-flag.png" alt="Footer Logo">
+        </div>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

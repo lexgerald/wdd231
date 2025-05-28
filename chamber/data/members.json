@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Green Light Distribution",
+        "address": "123 Main Street, Wellington Bassah",
+        "phone": "+232-123-4567",
+        "website": "https://greenlightdistribution.com/",
+        "image": "../images/green.svg",
+        "membership": 3,
+        "industry": "Manufacturing"
+    },
+    {
+      "name": "Charter Up",
+      "address": "456 Innovation Drive, [City], [State]",
+      "phone": "1-855-920-2287",
+      "website": "https://www.charterup.com/",
+      "image": "../images/charter.png",
+      "membership": 2,
+      "industry": "Transportation"
+    },
+    {
+      "name": "Care Bridge",
+      "address": "926 Main Street Nashville, TN 37206",
+      "phone": "(615) 679-9087",
+      "website": "https://www.carebridgehealth.com/",
+      "image": "../images/care.png",
+      "membership": 1,
+      "industry": "Health"
+    },
+    {
+        "name": "Skyline Smart Energy",
+        "address": "456 Innovation Drive, Arizona and Oklahoma",
+        "phone": "(855) 256-1507",
+        "website": "https://skylinesmartenergy.com/",
+        "image": "../images/Skyline.png",
+        "membership": 2,
+        "industry": "Energy"
+      },
+      {
+        "name": "EverHive Corporation",
+        "address": "600 B Street Suite 300 San Diego, CA 92101 USA",
+        "phone": " 1-800-945-6340",
+        "website": "https://www.everhive.com/",
+        "image": "../images/EverHive.png",
+        "membership": 3,
+        "industry": "Collaboration"
+    },
+    {
+        "name": "Market Call",
+        "address": "78 SW 7th St Miami FL 33130",
+        "phone": "+1 (844) 410-5210",
+        "website": "https://www.marketcall.com/",
+        "image": "../images/marketcall.svg",
+        "membership": 2,
+        "industry": "lead generation technologies"
+      },
+      {
+        "name": "Upward Health",
+        "address": "80 Arkay Drive Suite 230 Hauppauge, NY 11788",
+        "phone": "(833) 342-1454",
+        "website": "https://upwardhealth.com/",
+        "image": "../images/upwardHealth.png",
+        "membership": 2,
+        "industry": "Health"
+      },
+      {
+        "name": "FlexCare Infusion Centers",
+        "address": "Convenient clinic locations across Alabama, Arizona and Oklahoma",
+        "phone": "(555) 987-6543",
+        "website": "https://flexcareinfusion.com/",
+        "image": "../images/flexcare.webp",
+        "membership": 2,
+        "industry": "Therapy"
+      },
+      {
+        "name": "Liveshopper Sassie",
+        "address": "LiveShopper, LLC 401 S. Main St, Floor 2 Findlay, OH 45840",
+        "phone": "(567) 429-8258",
+        "website": "https://liveshopper.com/",
+        "image": "../images/lives.webp",
+        "membership": 2,
+        "industry": "Software company"
+      }
+  ]

@@ -1,0 +1,460 @@
+/* Base Styles */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #e7c24f;
+    --accent1-color: #a43312;
+    --accent2-color: #381d2a;
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+    --nav-background-color: #381d2a;
+    --nav-link-color: #e7c24f;
+    --nav-hover-link-color: #a43312;
+    --nav-hover-background-color: #003366;
+     --dark-color: #343a40;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-content img {
+    padding: 10px;
+}
+
+.logo {
+    width: 160px;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li {
+    flex: 1;
+    text-align: center;
+}
+
+.navigation a {
+    display: block;
+    color: var(--nav-link-color);
+    text-decoration: none;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+
+.navigation a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: #fff;
+}
+
+.active a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* ===== BASE CTA BUTTON STYLES ===== */
+.cta-button {
+  display: inline-block;
+  background-color: #e7c24f; /* Gold/Yellow - stands out */
+  color: #003366; /* Dark blue - high contrast */
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid transparent;
+}
+
+.hero {
+    position: relative;
+    padding-top: 60px; /* Creates space below header */
+  }
+
+  .hero h1 {
+    padding-top: 50px;
+    margin-top: 60px;
+  }
+
+/* Hover/Active States */
+.cta-button:hover {
+  background-color: #003366;
+  color: #e7c24f;
+  border-color: #e7c24f;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:active {
+  transform: translateY(1px);
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 768px) {
+  .hero-content {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 1.5rem;
+    background-color: rgba(0, 51, 102, 0.8);
+    border-radius: 15px;
+  }
+
+  .cta-button {
+    width: 100%; /* Full width of parent container */
+    padding: 1rem;
+    font-size: 1.2rem;
+    display: block; /* Stack below heading */
+  }
+
+  /* Micro-interaction for touch devices */
+  .cta-button:active {
+    transform: scale(0.98);
+  }
+}
+
+/* Larger screens */
+@media (min-width: 769px) {
+  .hero-content {
+    padding: 2rem;
+    background-color: rgba(0, 51, 102, 0.9);
+  }
+  
+  .cta-button {
+    min-width: 200px; /* Prevent awkward narrow buttons */
+  }
+}
+
+/* Sections */
+section {
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Events */
+.event-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Weather */
+.weather {
+    background-color: #e6f2ff;
+    border-radius: 10px;
+}
+
+.current-weather, .forecast {
+    margin-bottom: 1rem;
+}
+
+/* Spotlights */
+.spotlight-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.spotlight-card img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-logo {
+    width: 60px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Mobile Menu */
+#menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        display: none;
+        flex-direction: column;
+    }
+    
+    .navigation.show {
+        display: flex;
+    }
+    
+    #menu-button {
+        display: block;
+    }
+}
+
+/* Join Page Styles */
+.join-main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.join-container {
+    display: grid;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .join-container {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.join-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.join-form fieldset {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.join-form legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+
+.join-form label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.join-form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.join-form input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+.note {
+    font-size: 0.8rem;
+    color: #666;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+/* Membership Cards */
+.membership-cards {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.3s; }
+.card:nth-child(3) { animation-delay: 0.5s; }
+.card:nth-child(4) { animation-delay: 0.7s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.more-info {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.more-info:hover {
+    background-color: rgb(111, 109, 109);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 5px;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Thank You Page Styles */
+.thankyou-main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.confirmation-details {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.detail-label {
+    font-weight: bold;
+}
+
+.detail-value {
+    padding: 0.25rem 0;
+}

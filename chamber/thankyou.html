@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Freetown Chamber of Commerce</title>
+    <meta name="description" content="Thank you for joining our chamber of commerce">
+    <link rel="stylesheet" href="styles/base2.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/logo.jpg">
+</head>
+<body>
+    <header>
+        <header>
+            <div class="header-content">
+                <img src="images/logo.jpg" alt="Chamber Logo" class="logo">
+                <button id="menu-button" aria-label="Navigation Menu">☰</button>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </header>
+    </header>
+
+    <main class="thankyou-main">
+        <h1>Thank You for Your Application!</h1>
+        
+        <div class="confirmation-details">
+            <h2>Application Received</h2>
+            <p>We've received your application with the following details:</p>
+            
+            <div class="detail-grid">
+                <div class="detail-label">Name:</div>
+                <div class="detail-value" id="confirm-name"></div>
+                
+                <div class="detail-label">Email:</div>
+                <div class="detail-value" id="confirm-email"></div>
+                
+                <div class="detail-label">Phone:</div>
+                <div class="detail-value" id="confirm-phone"></div>
+                
+                <div class="detail-label">Business:</div>
+                <div class="detail-value" id="confirm-business"></div>
+                
+                <div class="detail-label">Membership Level:</div>
+                <div class="detail-value" id="confirm-membership"></div>
+                
+                <div class="detail-label">Application Date:</div>
+                <div class="detail-value" id="confirm-date"></div>
+            </div>
+            
+            <p>A chamber representative will contact you within 2 business days to complete your membership process.</p>
+            <p>Return to our <a href="index.html">home page</a> to learn more about chamber activities.</p>
+        </div>
+    </main>
+
+    <!-- Footer with your chamber template -->
+    <footer>
+        <footer>
+            <div class="footer-content">
+                <div class="contact-info">
+                    <img src="images/logo.jpg" alt="Chamber Logo" class="footer-logo">
+                    <p>123 Main Street<br>Freetown, ST 12345<br>☎ (+232) 88-412467<br>✉ info@yourcitychamber.org</p>
+                </div>
+                <div class="footer-links">
+                    <p>&copy; <span id="current-year"></span> Freetown Chamber</p>
+                    <p>Gerald Williams</p>
+                    <p>WDD 231 Project</p>
+                    <p>Last Modified: <span id="last-modified"></span></p>
+                </div>
+            </div>
+        </footer>
+    </footer>
+
+    <script>
+        // Parse URL parameters and display confirmation details
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        document.getElementById('confirm-name').textContent = 
+            `${urlParams.get('firstName')} ${urlParams.get('lastName')}`;
+        document.getElementById('confirm-email').textContent = urlParams.get('email');
+        document.getElementById('confirm-phone').textContent = urlParams.get('phone');
+        document.getElementById('confirm-business').textContent = urlParams.get('business');
+        
+        // Format membership level
+        const membership = urlParams.get('membership');
+        let membershipText = '';
+        switch(membership) {
+            case 'np': membershipText = 'NP Membership (Non-Profit)'; break;
+            case 'bronze': membershipText = 'Bronze Membership'; break;
+            case 'silver': membershipText = 'Silver Membership'; break;
+            case 'gold': membershipText = 'Gold Membership'; break;
+            default: membershipText = membership;
+        }
+        document.getElementById('confirm-membership').textContent = membershipText;
+        
+        // Format date
+        const timestamp = new Date(urlParams.get('timestamp'));
+        document.getElementById('confirm-date').textContent = timestamp.toLocaleString();
+    </script>
+</body>
+</html>
