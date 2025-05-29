@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visit The Groove Lounge - Location, hours, and contact information for our premier music venue.">
+    <title>The Groove Lounge | Visit Us</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+    
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="index.html" class="logo">The Groove Lounge</a>
+                <button class="hamburger" aria-expanded="false" aria-label="Menu">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+            <ul class="nav-menu" id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="visit.html" class="active">Visit Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="visit-main">
+        <section class="visit-hero">
+            <h1>Come Experience the Music</h1>
+            <p>We can't wait to welcome you to our venue</p>
+        </section>
+
+        <div class="visit-container">
+            <section class="venue-info">
+                <div class="info-card">
+                    <h2><span class="icon">📍</span> Location</h2>
+                    <address>
+                        123 Music Street<br>
+                        Cityville, ST 12345<br><br>
+                        <strong>Parking:</strong> Free lot behind venue
+                    </address>
+                </div>
+
+                <div class="info-card">
+                    <h2><span class="icon">⏰</span> Hours</h2>
+                    <ul class="hours-list">
+                        <li><span>Mon-Thu:</span> 5PM - 11PM</li>
+                        <li><span>Fri-Sat:</span> 4PM - 1AM</li>
+                        <li><span>Sun:</span> 4PM - 10PM</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h2><span class="icon">📞</span> Contact</h2>
+                    <ul class="contact-list">
+                        <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li><a href="mailto:info@groovelounge.com">info@groovelounge.com</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="map-container">
+                <h2>Find Us</h2>
+                <div class="map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209106735!2d-73.987844924525!3d40.74844097138996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTQuMiJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        aria-label="Google Maps location of The Groove Lounge">
+                    </iframe>
+                </div>
+            </section>
+
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" class="groove-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" required>
+                            <option value="" disabled selected>Select a topic</option>
+                            <option value="booking">Band Booking</option>
+                            <option value="private">Private Events</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" placeholder="What would you like to tell us?" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" checked>
+                        <label for="newsletter">Subscribe to our newsletter</label>
+                    </div>
+
+                    <button type="submit" class="groove-button">
+                        <span class="button-text">Send Message</span>
+                        <span class="button-icon">🎵</span>
+                    </button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🎵🎶The Groove Lounge🎵🎶 All rights reserved.</p>
+    </footer>
+</body>
+</html>
