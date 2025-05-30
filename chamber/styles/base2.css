@@ -467,3 +467,88 @@ footer {
 .detail-value {
     padding: 0.25rem 0;
 }
+
+/* Base styles for all screens */
+.discover-main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "visitor"
+        "grid";
+    gap: 1.5rem;
+}
+
+.discover-main h1 {
+    grid-area: title;
+    margin: 0;
+    text-align: center;
+}
+
+.visitor-info {
+    grid-area: visitor;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.discover-grid {
+    grid-area: grid;
+    display: grid;
+    grid-template-areas:
+        "attraction1"
+        "attraction2"
+        "attraction3"
+        "attraction4"
+        "attraction5"
+        "attraction6"
+        "attraction7"
+        "attraction8";
+    gap: 1.5rem;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: white;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.card figure {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+.card address {
+    font-style: normal;
+    margin: 0.5rem 0;
+}
+
+.card button {
+    background-color: var(--accent-color);
+    color: var(--nav-hover-background-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: var(--secondary-color);
+}

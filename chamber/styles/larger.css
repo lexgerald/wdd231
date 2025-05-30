@@ -45,3 +45,28 @@
         margin: 0 auto;
     }
 }
+
+/* Large screens (1025px and up) */
+@media (min-width: 1025px) {
+    .discover-main {
+        grid-template-areas:
+            "title title"
+            "visitor grid"
+            "visitor grid";
+        grid-template-columns: 300px 1fr;
+    }
+    
+    .discover-grid {
+        grid-template-areas:
+            "attraction1 attraction2 attraction3"
+            "attraction4 attraction5 attraction6"
+            "attraction7 attraction8 .";
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .visitor-info {
+        position: sticky;
+        top: 1rem;
+        align-self: start;
+    }
+}

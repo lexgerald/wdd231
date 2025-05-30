@@ -13,9 +13,11 @@
   <meta property="og:image" content="https://github.com/lexgerald/wdd231/blob/main/images/williams.jpg">
   <meta property="og:url" content="https://lexgerald.github.io/wdd231/chamber/directory.html">
   
-    <title>Freetown Chamber of Commerce</title>
+    <title>Discover Our Area | Freetown Chamber of Commerce</title>
     <link rel="stylesheet" href="styles/base2.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <script src="scripts/discover.js" defer></script>
     <link rel="icon" href="images/logo.jpg">
 </head>
 <body>
@@ -34,57 +36,16 @@
         </nav>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <picture>
-                <source media="(max-width: 600px)" srcset="images/hero-small.jpg">
-                <source media="(min-width: 601px)" srcset="images/hero-large.jpg">
-                <img src="images/hero-large.jpg" alt="City skyline">
-            </picture>
-            <h1>Directory that show Companies</h1>
-            <div class="hero-content">
-                <h2>Welcome to Our Community</h2>
-                <a href="join.html" class="cta-button">Join the Chamber</a>
-            </div>
-        </section>
+    <main class="discover-main">
+        <h1>Discover Our Area</h1>
+        
+        <aside class="visitor-info">
+            <div id="visit-message"></div>
+        </aside>
 
-        <!-- Current Events -->
-        <section class="events">
-            <h2>Upcoming Events</h2>
-            <div class="event-card">
-                <h3>Business Networking Mixer</h3>
-                <p>June 15, 2025 | 5:30 PM - 7:30 PM</p>
-                <p>Freetown City Councle</p>
-            </div>
-            <div class="event-card">
-                <h3>Economic Development Forum</h3>
-                <p>June 22, 2025 | 8:00 AM - 12:00 PM</p>
-                <p>Downtown Business Hub</p>
-            </div>
-        </section>
-
-        <!-- Weather Section -->
-        <section class="weather">
-            <h2>Local Weather</h2>
-            <div class="current-weather">
-                <h3>Current Conditions</h3>
-                <div id="weather-icon"></div>
-                <p>Temperature: <span id="current-temp"></span>°F</p>
-                <p>Condition: <span id="weather-desc"></span></p>
-                <p>Humidity: <span id="humidity"></span>%</p>
-            </div>
-            <div class="forecast">
-                <h3>3-Day Forecast</h3>
-                <div id="forecast-container"></div>
-            </div>
-        </section>
-
-        <!-- Member Spotlights -->
-        <section class="spotlights">
-            <h2>Member Spotlights</h2>
-            <div id="spotlight-container"></div>
-        </section>
+        <div class="discover-grid" id="attractions-container">
+            <!-- Cards will be inserted here by JavaScript -->
+        </div>
     </main>
 
     <footer>
@@ -105,5 +66,6 @@
     <script src="scripts/main.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/members.js" defer></script>
+    
 </body>
 </html>
