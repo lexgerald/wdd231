@@ -478,7 +478,7 @@ footer {
         "title"
         "visitor"
         "grid";
-    gap: 1.5rem;
+    gap: 1.5rem; /* This adds consistent spacing between all grid items */
 }
 
 .discover-main h1 {
@@ -540,8 +540,8 @@ footer {
 }
 
 .card button {
-    background-color: var(--accent-color);
-    color: var(--nav-hover-background-color);
+    background-color: var(--nav-hover-background-color);
+    color: var(--secondary-color);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -550,5 +550,5 @@ footer {
 }
 
 .card button:hover {
-    background-color: var(--secondary-color);
+    background-color: rgb(111, 109, 109);
 }

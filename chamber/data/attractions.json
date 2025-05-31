@@ -3,48 +3,48 @@
         "name": "City Park",
         "address": "100 Park Avenue, Your City",
         "description": "Beautiful 50-acre park with walking trails, playgrounds, and picnic areas.",
-        "image": "images/charter.png"
+        "image": "images/city-park.webp"
     },
     {
         "name": "Historical Museum",
         "address": "200 History Lane, Your City",
         "description": "Explore our city's rich history through interactive exhibits and artifacts.",
-        "image": "images/charter.png"
+        "image": "images/mesium.webp"
     },
     {
         "name": "Downtown Plaza",
         "address": "300 Main Street, Your City",
         "description": "Vibrant shopping and dining district with weekly farmer's markets.",
-        "image": "images/charter.png"
+        "image": "images/plaza.webp"
     },
     {
         "name": "Riverwalk",
         "address": "400 Riverside Drive, Your City",
         "description": "Scenic 2-mile path along the river with beautiful views and wildlife.",
-        "image": "images/charter.png"
+        "image": "images/walk.webp"
     },
     {
         "name": "Convention Center",
         "address": "500 Event Boulevard, Your City",
         "description": "State-of-the-art facility hosting conferences, trade shows, and events.",
-        "image": "images/charter.png"
+        "image": "images/convert.webp"
     },
     {
         "name": "Art Gallery",
         "address": "600 Culture Street, Your City",
         "description": "Contemporary art space featuring local and national artists.",
-        "image": "images/charter.png"
+        "image": "images/art.webp"
     },
     {
         "name": "Sports Complex",
         "address": "700 Athletic Drive, Your City",
         "description": "Premier facility for tournaments with multiple fields and courts.",
-        "image": "images/charter.png"
+        "image": "images/sport.webp"
     },
     {
         "name": "Botanical Gardens",
         "address": "800 Flora Way, Your City",
         "description": "Stunning display of native and exotic plants across 30 acres.",
-        "image": "images/charter.png"
+        "image": "images/garden.webp"
     }
 ]
